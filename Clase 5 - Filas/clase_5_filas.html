@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Filas / Rows</title>
+    <title>Clase 5 - Definiendo Filas</title>
     <style>
         body {
-            font-family: Arial;
-            color: white
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
         }
         .container {
             display: grid;
             /* grid-template-columns: 200px 200px 200px; */
             /* grid-template-columns: 25% 50% 25%; */
             /* grid-template-columns: 25% 200px 25%; */
-            /* grid-template-rows: 300px 300px; */
+            /* grid-template-rows: 300px 230px 300px; */
             /* grid-template: filas / columnas; */
-            grid-template: 300px 100px 100px 100px / 50% 25% 25%;
+            /* grid-template: 25% 70% 20% / 400px 100px 200px; */
+            grid-template: 300px 100px 100px 100px / 50% 200px 100px;
         }
         .item {
-            background: rgb(28, 141, 179);
+            background-color: rgb(170, 170, 170);
             padding: 10px;
-            border: rgb(255, 255, 255) solid 2px;
+            border: 1.5px solid rgb(255, 255, 255);
         }
         @media (max-width: 700px) {
             .container {
-                grid-template: 300px / 100%;
+                grid-template: 100px 100px / 100%;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -44,7 +45,7 @@
         <div class="item">contenido #9</div>
         <div class="item">contenido #10</div>
         <div class="item">contenido #11</div>
-        <div class="item">contenido #12</div>  
+        <div class="item">contenido #12</div>
     </section>
 </body>
 </html>

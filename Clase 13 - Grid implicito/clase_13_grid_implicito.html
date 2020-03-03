@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Clase 13 - Nombre de filas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+        }
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+            grid-template-rows: [iniciorow] 200px [inicio2] 200px [final];
+            grid-gap: 5px;
+            height: 100vh;
+
+        }
+        .item {
+            background-color: antiquewhite;
+            padding: 10px;
+            /* border: 4px rgb(212, 212, 212) solid; */
+        }
+        .item:nth-of-type(1) {
+            /* grid-column: 1 / span 3;   
+            grid-row: 1 / span 2; */
+            grid-column: inicio / destacado-end;
+            grid-row: iniciorow / final;
+            background: blue;
+        }
+        .item:nth-of-type(2) {
+            grid-column: destacado-end / destacado2-end;
+            grid-row: iniciorow / final;
+            /* grid-column: 4 / span 2;
+            grid-row: 1 / span 2; */
+            background: orange; 
+        }
+        .item:nth-of-type(3) {
+            grid-column: destacado2-end / final;
+            /* grid-column: 6 / span 2; */
+            background: orangered; 
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+      <div class="item">item #1</div>
+      <div class="item">item #2</div>
+      <div class="item">item #3</div>
+      <div class="item">item #4</div>
+      <div class="item">item #5</div>
+    </section> 
+</body>
+</html>

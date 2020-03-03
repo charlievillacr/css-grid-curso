@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<htmllang="en">
+<head>
+  <metacharset="UTF-8">
+  <metaname="viewport"content="width=device-width,initial-scale=1.0">
+  <metahttp-equiv="X-UA-Compatible"content="ie=edge">
+  <title>Tamaño de item en columnas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3,200px);
+      grid-template-rows: repeat(4,100px);
+      height: 100vh;
+      grid-gap: 5px;
+      /* justify-content | align-content: start end center strech space-between space-around space-evenly */
+      justify-content: center;
+      align-content: center;
+    }
+
+    .item {
+      background-color: lightblue;
+      border: 1px solid red;
+      display: flex;
+    /*justify-content: center;
+      align-items: center; */
+    }
+
+
+  </style>
+</head>
+<body>
+  <sectionclass="container">
+    <divclass="item">item #1</div>
+    <divclass="item">item #2</div>
+    <divclass="item">item #3</div>
+    <divclass="item">item #4</div>
+    <divclass="item">item #5</div>
+    <divclass="item">item #6</div>
+    <divclass="item">item #7</div>
+    <divclass="item">item #8</div>
+    <divclass="item">item #9</div>
+    <divclass="item">item #10</div>
+    <divclass="item">item #11</div>
+    <divclass="item">item #12</div>
+  </section>
+</body>
+</html>
